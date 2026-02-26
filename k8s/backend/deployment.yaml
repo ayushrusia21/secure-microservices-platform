@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: ayushrusia21/backend-service:1.0
+        image: ayushrusia21/backend-service:2.0
         ports:
         - containerPort: 3000
         env:

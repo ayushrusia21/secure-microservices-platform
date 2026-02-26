@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure Platform</title>
+</head>
+<body>
+  <h1>Secure Microservices Platform</h1>
+  <button onclick="callBackend()">Call Backend API</button>
+  <p id="response"></p>
+
+  <script>
+    function callBackend() {
+      fetch("/api")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("response").innerText = data;
+        })
+        .catch(err => {
+          document.getElementById("response").innerText = "Error calling backend";
+        });
+    }
+  </script>
+</body>
+</html>
