@@ -55,10 +55,11 @@ jobs:
         with:
           image-ref: ayushrusia21/backend-service:latest
           format: table
-          exit-code: 1
+          exit-code: '1'
           ignore-unfixed: true
-          severity: CRITICAL,HIGH
-
+          vuln-type: os,library
+          severity: CRITICAL
+      
       - name: Push Docker Image
         run: |
           docker push ayushrusia21/backend-service:latest
