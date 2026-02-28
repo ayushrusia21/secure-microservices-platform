@@ -19,6 +19,17 @@ spec:
           ports:
             - containerPort: 3000
 
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1000
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop:
+                - ALL
+            seccompProfile:
+              type: RuntimeDefault
+
           envFrom:
             - configMapRef:
                 name: backend-config
