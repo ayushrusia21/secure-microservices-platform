@@ -3,10 +3,13 @@ kind: Service
 metadata:
   name: backend
   namespace: secure-app
+  labels:
+    app: backend
 spec:
   type: ClusterIP
   selector:
     app: backend
   ports:
-    - port: 3000
+    - name: http
+      port: 3000
       targetPort: 3000
