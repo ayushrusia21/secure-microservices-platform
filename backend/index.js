@@ -68,6 +68,10 @@ app.get("/metrics", async (req, res) => {
   res.end(await client.register.metrics());
 });
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+  });
+}
+
+module.exports = app;
