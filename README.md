@@ -84,3 +84,6 @@ This platform demonstrates secure, automated, observable Kubernetes infrastructu
 
 ## Horizontal Pod Autoscaler
 ![HPA](docs/hpa.png)
+
+## Grafana Monitoring Dashboard
+![Grafana](docs/grafana-dashboard.png)
