@@ -77,6 +77,21 @@ This platform demonstrates secure, automated, observable Kubernetes infrastructu
 
 ---
 
+## Centralized Logging
+
+Loki was deployed and verified at the service level.
+
+However, due to Istio mesh policy interactions and time constraints,
+full Grafana integration was not finalized.
+
+Loki readiness endpoint was verified and logs were successfully ingested.
+
+Future improvement:
+- Proper Istio PeerAuthentication policy
+- Sidecar injection alignment
+
+---
+
 # Screenshots
 
 ## Running Pods
