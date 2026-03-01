@@ -95,10 +95,25 @@ Future improvement:
 # Screenshots
 
 ## Running Pods
+All application components running successfully in the `secure-app` namespace.
 ![Running Pods](docs/pods.png)
 
 ## Horizontal Pod Autoscaler
+Backend deployment configured with CPU-based autoscaling (min: 1, max: 5).
 ![HPA](docs/hpa.png)
 
+## ArgoCD Application Sync
+GitOps deployment managed via ArgoCD with automated sync enabled.
+![ArgoCD](docs/argocd-sync.png)
+
+## Prometheus Target Health
+Prometheus successfully scraping backend service metrics (2/2 targets UP).
+![Prometheus](docs/prometheus-targets.png)
+
 ## Grafana Monitoring Dashboard
+Real-time CPU and memory usage monitoring for all application pods.
 ![Grafana](docs/grafana-dashboard.png)
+
+## Network Policy Enforcement
+NetworkPolicy restricting backend access to frontend, ingress controller, and monitoring namespace.
+![Network Policy](docs/network-policy.png)
