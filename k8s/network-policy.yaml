@@ -11,7 +11,7 @@ spec:
   policyTypes:
     - Ingress
 
- ingress:
+  ingress:
     - from:
         # Allow frontend pods
         - podSelector:
