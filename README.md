@@ -74,3 +74,13 @@ Architecture diagram will be available in docs folder.
 # Conclusion
 
 This platform demonstrates secure, automated, observable Kubernetes infrastructure following production-grade best practices.
+
+---
+
+# Screenshots
+
+## Running Pods
+![Running Pods](docs/pods.png)
+
+## Horizontal Pod Autoscaler
+![HPA](docs/hpa.png)
